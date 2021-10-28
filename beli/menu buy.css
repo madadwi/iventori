@@ -1,0 +1,166 @@
+/*Body*/
+body {
+    font-family: calibri;
+    background-color: #232222;
+}
+
+/*Header (logo + ket log in/daftar)*/
+header {
+    width: 1366px;
+    height: 90px;
+    margin-left: -8px;
+    margin-top: -8px;
+    background-image: linear-gradient(to right, #710101, #710101, black, black);
+    position: fixed;
+}
+
+/*Logo ASMR*/
+header img {
+    width: 140px;
+    height: auto;
+    margin-top: 13px;
+    margin-left: 9px;
+}
+
+/*Animasi*/
+header a:hover {
+    opacity: 70%;
+}
+
+/*Keterangan halaman*/
+header h3 {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: -55px;
+    margin-left: 82%;
+    animation: tx 1.5s infinite alternate;
+}
+
+@keyframes tx {
+    0% {
+        opacity: 45%;
+    }
+
+    25% {
+        opacity: 50%;
+    }
+
+    50% {
+        opacity: 65%;
+    }
+
+    75% {
+        opacity: 75%;
+    }
+
+    100% {
+        opacity: 90%;
+    }
+}
+
+.back a {
+    position: static;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    margin-top: 90px;
+    padding-bottom: 10px;
+}
+
+.back a:hover {
+    transform: scale(1.04);
+    color: orange;
+}
+
+article .pict {
+    background-color: black;
+    width: 450px;
+    height: 450px;
+    border-radius: 10px;
+    border: 1px solid red;
+    margin-left: 120px;
+    margin-top: -30px;
+}
+
+article h1 {
+    background: -webkit-linear-gradient(45deg, orange, yellow);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 590px;
+    margin-top: -450px;
+    font-size: 33px;
+}
+
+article .info {
+    color: white;
+    margin-left: 590px;
+    margin-top: 120px;
+    font-size: 20px;
+}
+
+article .kuantitas {
+    margin-left: 590px;
+    color: white;
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+article .kuantitas .pcs {
+    background-color: transparent;
+    border: 2px solid red;
+    outline: none;
+    width: 80px;
+    height: 30px;
+    font-size: 20px;
+    color: white;
+}
+
+article .buy input {
+    margin-left: 590px;
+    margin-top: 50px;
+    width: 140px;
+    height: 30px;
+    font-size: 18px;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+    border: 1px solid silver;
+}
+
+article .buy input:hover {
+    transform: scale(1.07);
+    background-color: orangered;
+    opacity: 0.8;
+}
+
+footer {
+    background-color: black;
+    width: 101.1%;
+    height: 50px;
+    margin-left: -8px;
+    margin-top: 122px;
+    margin-bottom: -8px;
+}
+
+/*Copy right*/
+footer h3 {
+    color: white;
+    font-size: 18px;
+    margin-top: -0px;
+    padding-top: 15px;
+    padding-left: 10px;
+    width: 99.3%;
+}
+
+/*Nama develop*/
+footer h4 i {
+    font-weight: normal;
+    color: white;
+    font-size: 18px;
+    margin-top: -45px;
+    margin-left: 78%;
+    position: absolute;
+}

@@ -1,0 +1,30 @@
+body {
+	background-color: #232222;
+	font-family: calibri;
+}
+
+article a {
+    position: static;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-size: 35px;
+    margin-top: 10px;
+    margin-left: 97%;
+}
+
+article a:hover {
+    transform: scale(1.04);
+    color: orange;
+}
+
+article img {
+	width: 460px;
+	height: 460px;
+	margin-top: -15px;
+}
+
+article h1 {
+	 background: -webkit-linear-gradient(45deg, red, orange, yellow );-webkit-background-clip: text;-webkit-text-fill-color: transparent;;
+	 font-size: 30px;
+}

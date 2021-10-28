@@ -1,0 +1,838 @@
+/*Tampilan body*/
+body{
+    font-family: calibri;
+    background-color: #232222;  
+}
+
+/*header (logo + keterangan)*/
+header {
+    width: 1374px;
+    height: 90px;
+    margin-left: -8px;
+    margin-top: -8px;
+    background-image: linear-gradient(to right, #710101, #710101, black, black);
+    position: fixed; 
+}
+
+/*Logo ASMR*/
+header img {
+    width: 140px;
+    height: auto;
+    margin-top: 13px;
+    margin-left: 9px; 
+}
+
+/*Animasi Logo*/
+header a:hover {
+    opacity: 70%; 
+}
+
+/*Slogan*/
+header h1 {
+    display: none;
+    color: white;
+}
+
+/*Keterangan halaman*/
+header h3 {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: -45px;
+    margin-left: 87.5%;
+    animation: tx 1.5s infinite alternate ; 
+}
+@keyframes tx {
+    0%  {
+        opacity: 45%;
+    }
+    25%  {
+        opacity: 50%;
+    }
+    50%  {
+        opacity: 65%;
+    }
+    75%  {
+        opacity: 75%;
+    }
+    100%  {
+        opacity: 90%;
+    }
+}
+
+/*Kolom menu navbar*/
+.menu {
+    width: 1366px;
+    height: 40px;
+    margin-left: -8px;
+    margin-top: 82px;
+    background-color: rgb(0,0,0, 85%);
+    position: fixed; 
+}
+
+/*List menu navbar*/
+.menu li a {
+    display: inline-block;
+    color: white;
+    font-family: calibri;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+.menu li {
+    margin-top: -6px;
+    margin-left: -20px;
+    padding: 0px 25px;
+    float: left;
+    list-style-type:none;
+}
+
+/*Animasi icon*/
+.menu i:hover {
+    opacity: 70%;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+/*Animasi*/
+.menu a:hover {
+    opacity: 70%;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+/*Garis merah posisi halaman*/
+.menu .active {
+    background: transparent;
+    border-bottom: 2px solid red;
+    width: auto;
+}
+
+.menu .logout {
+    color: red;
+}
+
+.menu .logout:hover {
+    color: orange;
+}
+
+/*CSS kolom tentang*/
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-left: 34%;
+}
+
+.dropdown li {
+  color: orangered;
+  font-size: 17px;
+  cursor: pointer;
+}
+.dropdown li:hover {
+    color: red;
+    transform: scale(1.05);
+}
+.dropdown-content1 {
+  display: none;
+  position: absolute;
+  color: black;
+  z-index: 1;
+  color: white;
+  background-color: rgb(0,0,0, 85%);
+  width: 400px;
+  padding: 5px;
+  border: 2px solid red;
+  margin-top: 20px;
+  margin-left: -320px;
+}
+.dropdown:hover .dropdown-content1 {
+    display: block;
+}
+
+/*CSS kolom bantuan*/
+.dropbtn2 {
+  color: orangered;
+  font-size: 17px;
+}
+
+.dropdown2 {
+  position: relative;
+  display: inline-block;
+  margin-left: -50px;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.dropdown2:hover {
+    color: red;
+    transform: scale(1.05);
+}
+
+.dropdown-content2 {
+  display: none;
+  position: absolute;
+  background-color: rgb(0,0,0, 85%);
+  border: 2px solid red;
+  width: 100px;
+  margin-left: -20px;
+  margin-top: 15px;
+  z-index: 1;
+}
+
+.dropdown-content2 a {
+  color: black;
+  padding: 15px 0px 15px 12px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content2 a:hover {
+    color: orange;
+    transform: scale(1.05);
+    opacity: 80%;
+}
+
+.dropdown2:hover .dropdown-content2 {
+    display: block;
+}
+
+.mySlides {
+    display: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+/*Gambar slideshow*/
+.slideshow-container {
+    margin-top: 50px;
+    padding: 0px 0px 0px 68px;
+    max-width: 1200px;
+    position: static; 
+    transition: 1s; 
+} 
+
+/*Indikator slide bentuk bulat*/
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 1s ease; 
+}
+
+/*indikator halaman*/
+.active {
+    background-color: red;
+}
+
+/*Gambar menu home*/
+.gambar img {
+    width: 101.2%;
+    height: auto;
+    margin-left: -8px;
+    padding-top: 30px;
+}
+
+/*Gambar 2 kolom*/
+.gambar .img2 {
+    width: 49%;
+    padding: 20px 5px 0px 13px;
+}
+
+/*Gambar 3 kolom*/
+.gambar .img3 {
+    width: 32%;
+    padding: 20px 7px 20px 16px;
+}
+
+/*Menu bar mobile*/
+.mobile-menu {
+    margin-left: 1300px;
+    display: none; 
+}
+
+.mobile-menu:hover {
+    cursor: pointer;
+}
+
+/*Menu Log in mobile*/
+.mobile-menu2 a {
+    margin-left: 1000px;
+    display: none; 
+}
+.mobile-menu2 a:hover {
+    cursor: pointer;
+}
+
+/*Tombol menu bar*/
+#check {
+    display: none; 
+}
+
+/*Tombol menu Log in*/
+#check2 {
+    display: none; 
+}
+
+/*Sidebar mobile*/
+.sidebar {
+    position: fixed;
+    top: 0; bottom: 0; left: -300px;
+    width: 250px;
+    background-color: rgb(105,105,105, 80%);
+    transition: .5s; 
+}
+
+/*Judul Menu*/
+.sidebar h2 {
+    background-image: linear-gradient(to right, red, #710101, black);
+    width: 230px;
+    height: 50px;
+    padding-left: 20px;
+    color: white;
+    font-size: 40px;
+}
+
+/*List menu sidebar*/
+.sidebar ul li a{
+    font-family: calibri;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.sidebar ul li{
+    padding: 15px 0px;
+    transition-property: background-color;
+    list-style-type: none;
+    transition: .3s;
+}
+
+.sidebar ul li:hover{
+    height: 22px;
+    width: 180px;
+    transform: scale(1.2);
+    background-color: red;
+    margin-left: -21px;
+    text-align: left;
+    padding-left: 30px;
+    opacity: 75%;
+}
+
+/*Indikator halaman*/
+.sidebar .active {
+    background-color: rgb(57, 54, 54, 80%);
+}
+
+#check:checked ~ .sidebar {
+    left: 0px;
+    transition: .3px; /*klik tombol lalu muncul side bar*/
+}
+
+footer {
+    background-color: black;
+    width: 101.1%;
+    height: 500px;
+    margin-left: -8px;
+    margin-top: -20px;
+    margin-bottom: -20px;
+}
+
+/*ASMR*/
+footer h1 {
+    color: red;
+    font-size: 26px;
+    font-weight: normal;
+    text-align: center;
+    padding-top: 10px;
+}
+
+/*Media sosial*/
+footer h2 {
+    color: lightgrey;
+    font-size: 25px;
+    margin-left: 68%;
+    padding-top: 10px;
+    font-weight: normal;
+}
+
+/*Sponsor*/
+footer .iklan {
+    margin-left: 25%;
+    margin-top: -306px;
+}
+
+/*Gambar brand*/
+footer .brand img {
+    width: 80px;
+    height: auto;
+    margin-left: 200px;
+}
+
+footer .baris2 {
+    margin-left: 100px;
+    margin-top: -195px;
+}
+
+footer .baris3{
+    margin-left: 200px;
+    margin-top: -195px;
+}
+
+footer .kotak {
+    width: 50px;
+    height: auto;
+    margin-left: 215px;
+}
+
+footer .kotakbawah {
+    margin-left: 50px;
+}
+
+footer .kotak2 {
+    margin-left: 90px; 
+    margin-top: -100px;
+}
+
+/*List media sosial*/
+footer .icon ul li a{
+    color: lightgrey;
+    font-size: 17px;
+    text-decoration: none;
+    list-style-type: none;
+    margin-left: 68%;
+}
+
+footer a:hover {
+    opacity: 55%;
+}
+
+/*Copy right*/
+footer h3 {
+    color: white;
+    font-size: 18px;
+    margin-top: -0px;
+    padding-top: 20px;
+    padding-left: 10px;
+    border-top: 1px solid #fff; 
+    width: 99.3%;
+}
+
+/*Nama develop*/
+footer h4 i {
+    font-weight: normal;
+    color: white;
+    font-size: 18px;
+    margin-top: -45px;
+    margin-left: 78%;
+    position: absolute;
+}
+
+
+/*---------------------------------------------------------------------------------------------------------------*/
+
+
+@media screen and (max-width: 1200px) {
+    header {
+        width: 100%;
+    }
+
+    header h3 {
+        margin-left: 88%;
+    }
+
+    form {
+        margin-left: 66%;
+    }
+
+    .slideshow-container {
+        width: 90%;
+        padding: 0px 0px 0px 55px;
+    }
+
+    .gambar img {
+        height: auto;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .gambar .img2 {
+        width: 48%;
+        margin-left: 0;
+        
+    }
+
+    .gambar .img3 {
+        width: 30%;
+        padding: 10px 0px 15px 26px;
+    }  
+
+    footer {
+        width: 101.3%;
+    }
+
+    footer .brand img {
+        margin-left: 15%;
+    }
+
+    footer li {
+        list-style-type: none;
+    }
+
+    footer h3 { 
+        width: 99%;
+    }
+
+    footer h4 i {
+        margin-left: 80%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    header {
+        width: 100%;
+    }
+
+    header h3 {
+        margin-left: 86%;
+    }
+
+    form {
+        margin-left: 53%;
+    }
+
+    .slideshow-container {
+        width: 90%;
+        padding: 0px 0px 0px 46px;
+    }
+
+    .gambar img {
+        margin-left: 0;
+    }
+
+    .gambar .img2 {
+        margin-left: 0;
+        padding: 20px 5px 0px 10px;
+    }
+
+    .gambar .img3 {
+        padding: 10px 0px 15px 23px;
+    }  
+
+    footer {
+        width: 101.5%;
+    }
+    
+    footer .brand img {
+        margin-left: 13%;
+    }
+
+    footer h4 i {
+        margin-left: 75%;
+    }
+}
+
+@media only screen and (min-width: 860px) { 
+    .sidebar {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    header {
+        width: 100%;
+        height: 80px;
+        float: left;
+    }
+
+    header img {
+        width: 110px;
+        height: auto;
+        margin-top: 15px;
+        margin-left: 9px; /*Logo*/
+    }
+
+    header h1 {
+        display: block;
+        font-size: 13px;
+        margin-left: 121px;
+        margin-top: -13px;
+    }
+
+    header h3 {
+        display: none;
+    }
+
+    form {
+        display: none;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: block;
+        margin-left: 93%;
+        margin-top: -55px;
+        font-size: 13px;
+        float: left;
+    }
+
+    .mobile-menu2 a {
+        display: block;
+        margin-left: 86%;
+        margin-top: -55px;
+        font-size: 13px;
+        float: left;
+    }
+
+    .slideshow-container {
+        margin-top: 5px;
+        width: 92%;
+        height: auto;
+        padding: 0px 0px 0px 30px;
+    }
+
+    .dot {
+      height: 11px;
+      width: 11px;
+      margin-top: 20px;
+    }
+
+    .gambar img {
+        height: auto;
+        width: 100%;
+        margin-top: -15px;
+        margin-left: 0;
+    }
+
+    .gambar .img2 {
+        width: 100%; 
+        height: auto; 
+        margin-left: -12px; 
+        padding-top: 30px;
+    }
+
+    .gambar .img3 {
+        width: 30%;
+        height: auto;
+        padding: 30px 0px 15px 18px;
+    }
+
+    footer {
+        width: 101.8%;
+        height: 400px;   
+    }
+
+    footer h1 {
+        font-size: 23px;
+        text-align: center;
+    }
+
+    footer h2 {
+        font-size: 18px;
+        margin-left: 68%;
+        font-weight: normal;
+    }
+
+    footer .iklan {
+        margin-left: 21%;
+        margin-top: -290px;
+    }
+
+    footer .brand img {
+        width: 50px;
+        height: auto;
+        margin-top: 5px;
+        margin-left: 8%;
+    }
+
+    footer .baris2 {
+        margin-left: 155px;
+        margin-top: -158px;
+    }
+
+    footer .baris3{
+        margin-left: 80px;
+        margin-top: -152px;
+    }
+
+    footer .kotak {
+        width: 18px;
+        height: auto;
+    }
+
+    footer .kotakbawah {
+        margin-left: 5%;
+    }
+
+    footer .kotak2 {
+        margin-top: -70px;
+        margin-left: 70px;
+    }
+
+    footer .icon ul li a{
+        font-size: 16px;
+        margin-left: 66%;
+    }
+
+    footer h3 {
+        font-size: 17px;
+        margin-top: 20px;
+        padding-top: 10px; 
+        width: 99%;
+    }
+
+    footer h4 i {
+        font-size: 15px;
+        margin-top: -40px;
+        margin-left: 75%;
+    }
+}
+
+@media only screen and (max-width: 600px) { /*responsive mobile*/
+    header {
+        width: 100%;
+        height: 70px;
+        float: none;
+    }
+
+    header img {
+        width: 95px;
+        height: auto;
+        margin-top: 13px;
+        margin-left: 9px; /*Logo*/
+    }
+
+    header h1 {
+        display: block;
+        font-size: 13px;
+        margin-left: 105px;
+        margin-top: -13px;
+    }
+
+    header h3 {
+        display: none;
+    }
+
+    .mobile-menu {
+        margin-left: 92%;
+        margin-top: -48px;
+        font-size: 10px;
+        float: left;
+    }
+
+    .mobile-menu2 a {
+        margin-left: 84%;
+        margin-top: -48px;
+        font-size: 10px;
+        float: left;
+    }
+
+    .slideshow-container {
+        margin-top: -5px;
+        padding: 0px 0px 0px 22px;
+        width: 90%;
+        height: auto;
+    }
+
+    .dot {
+        height: 9px;
+        width: 9px;
+        margin-top: 25px;
+    }
+    
+    .gambar img {
+        height: auto;
+        width: 100%;
+        margin-top: -20px;
+        margin-left: 0;
+    }
+
+    .gambar .img2 {
+        width: 100%; 
+        height: auto; 
+        margin-left: -13px; 
+        padding-top: 30px;
+    }
+
+    .gambar .img3 {
+        width: 30%;
+        height: auto;
+        padding: 30px 0px 15px 9px;
+    }
+
+    footer {
+        width: 103.2%;
+        height: 380px;    
+    }
+
+    footer h1 {
+        font-size: 19px;
+        text-align: center;
+    }
+
+    footer h2 {
+        font-size: 17px;
+        margin-left: 65%;
+    }
+
+    footer .iklan {
+        margin-left: 20%;
+        margin-top: -290px;
+    }
+
+    footer .brand img {
+        width: 40px;
+        height: auto;
+        margin-top: 5px;
+        margin-left: 2%;
+    }
+
+    footer .baris2 {
+        margin-left: 115px;
+        margin-top: -141px;
+    }
+
+    footer .baris3{
+        margin-left: 55px;
+        margin-top: -140px;
+    }
+
+    footer .kotak {
+        width: 18px;
+        height: auto;
+    }
+
+    footer .kotakbawah {
+        margin-left: 30px;
+    }
+
+    footer .kotak2 {
+        margin-top: -65px;
+        margin-left: 50px;
+    }
+
+    footer .icon ul li a{
+        font-size: 15px;
+        margin-left: 61%;
+    }
+
+    footer h3 {
+        font-size: 15px;
+        margin-top: 40px;
+        padding-top: 10px; 
+        width: 98%;
+    }
+
+    footer h4 i {
+        font-size: 13px;
+        margin-top: -37px;
+        margin-left: 65%;
+    }
+}

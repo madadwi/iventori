@@ -1,0 +1,220 @@
+/*Body*/
+body {     
+    background-color: #232222; 
+    font-family: calibri;
+    background-image: url(../gambar2/bata.jpg);
+    width: auto;
+    height: auto;
+}
+
+/*Header (logo + keterangan)*/
+header {
+    width: 1366px;
+    height: 90px;
+    margin-left: -8px;
+    margin-top: -8px;
+    background-image: linear-gradient(to right, #710101, #710101, black, black);
+    position: fixed; 
+}
+
+/*Logo*/
+header img {
+    width: 140px;
+    height: auto;
+    margin-top: 13px;
+    margin-left: 9px; 
+}
+
+header a:hover {
+    opacity: 70%;
+}
+
+/*Keterangan halaman*/
+header h3 {
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: -40px;
+    margin-left: 86%;
+    animation: tx 1.5s infinite alternate ;
+}
+@keyframes tx {
+    0%  {
+        opacity: 45%;
+    }
+    25%  {
+        opacity: 50%;
+    }
+    50%  {
+        opacity: 65%;
+    }
+    75%  {
+        opacity: 75%;
+    }
+    100%  {
+        opacity: 90%;
+    }
+}
+
+/*Kolom menu tambahan*/
+.menu {
+    width: 1366px;
+    height: 40px;
+    margin-left: -8px;
+    margin-top: 82px;
+    background-color: rgb(0,0,0, 85%);
+    position: fixed; 
+}
+
+i {
+    color: black;
+}
+
+/*From untuk kolom search*/
+form {
+    width:300px;
+    margin-top: -20px;
+    margin-left: 1060px; 
+}
+
+/*kolom search*/
+.search {          
+    padding:5px 13px; 
+    background: none; 
+    border: none;
+    color: white;
+    border-bottom: 2px solid red;
+    margin-top: 10px;
+    margin-left: -2px;
+    outline: none;
+}
+
+/*Tombol search*/
+.button {
+    position:relative;
+    left: 0px;  
+    width: 19%;        
+    padding: 4px 2px; 
+    border:0px solid #008080;          
+    background-color: darkred; 
+    color:#fafafa;
+    font-weight: bold;
+    margin-top: 10px;
+    border-radius: 8px; 
+}
+
+/*Animasi*/
+.button:hover {
+    background: #D90707;          
+    color:#fafafa; 
+}
+
+.button:active {
+    background:#FF3400;
+}
+
+/*Kolom navbar*/
+.menu li a {
+    display: inline-block;
+    color: white;
+    font-size: 17px;
+    font-family: calibri;
+    text-decoration: none; 
+}
+
+/*List menu navbar*/
+.menu li {
+    margin-top: -6px;
+    margin-left: -20px;
+    padding: 0px 25px;
+    float: left;
+    list-style-type:none;
+}
+
+.menu i:hover {
+    opacity: 70%;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.menu a:hover {
+    opacity: 70%;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+/*Indikator halaman*/
+.menu .active {
+    border-bottom: 2px solid red;
+    width: auto;
+}
+
+.menu .logout {
+    color: red;
+}
+.menu .logout:hover {
+    color: orange;
+}
+
+/*Background profile*/
+.wrap {
+    background-color:rgba(255, 255, 255, 0.6);
+    width: 700px;
+    position: static;
+    top: 200px;
+    color:black;
+    margin:  30px auto;
+    padding:18px;
+    border-radius: 15px;
+}
+
+/*Judul profil*/
+.wrap h1 {
+    font-size: 35px;
+    background: -webkit-linear-gradient(45deg, red, darkred, black, black);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: -10px;
+}
+
+.wrap td {
+    font-size: 19px;
+}
+
+.wrap a{
+    text-decoration: none;
+}
+
+.icon {
+    padding:5px;
+    text-align: center;
+}
+
+footer {
+    background-color: black; 
+    width: 101.1%; 
+    height: 60px; 
+    margin-left: -8px; 
+    margin-top: 40px;
+    margin-bottom: -8px;
+}
+
+/*Copy right*/
+footer h3 {
+    color: white;
+    font-size: 18px;
+    margin-top: -0px;
+    padding-top: 20px;
+    padding-left: 10px;
+    width: 99.3%;
+}
+
+/*Nama develop*/
+footer h4 i {
+    font-weight: normal;
+    color: white;
+    font-size: 18px;
+    margin-top: -45px;
+    margin-left: 78%;
+    position: absolute;
+}

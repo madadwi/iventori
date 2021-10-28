@@ -1,0 +1,214 @@
+/*Body*/
+body {
+    font-family: calibri;
+    background-color: #232222;
+}
+
+/*Header (logo + keterangan)*/
+header {
+    width: 1366px;
+    height: 90px;
+    margin-left: -8px;
+    margin-top: -8px;
+    background-image: linear-gradient(to right, #710101, #710101, black, black);
+    position: fixed;
+}
+
+/*Keterangan halaman*/
+header h3 {
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: -55px;
+    margin-left: 84%;
+    animation: tx 1.5s infinite alternate ;
+}
+@keyframes tx {
+    0%  {
+        opacity: 45%;
+    }
+    25%  {
+        opacity: 50%;
+    }
+    50%  {
+        opacity: 65%;
+    }
+    75%  {
+        opacity: 75%;
+    }
+    100%  {
+        opacity: 90%;
+    }
+}
+
+
+/*Logo ASMR*/
+header img {
+    width: 140px;
+    height: auto;
+    margin-top: 13px;
+    margin-left: 9px;
+}
+
+.back a {
+    position: static;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    margin-top: 90px;
+}
+
+.back a:hover {
+    transform: scale(1.04);
+    color: orange;
+}
+
+/*Header tabel*/
+.header {
+    margin: 0px auto 50px;
+    width: 80%;
+}
+
+/*Judul tabel data*/
+.header h2 {
+    float: left;
+    color: #fff;
+    font-size: 30px;
+    border-bottom: 2px solid #fff;
+    width: 100%;
+}
+
+/*Tombol tambah barang*/
+.header .tombol {
+    float: right;
+    background: red;
+    color: #fff;
+    padding: 5px 20px;
+    border-radius: 5px;
+    transition: .2s ease;
+    border: 3px solid transparent;
+    text-decoration: none;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+/*Animasi tambah barang*/
+.header .tombol:hover {
+    transform: scale(1.04);
+    opacity: 70%; 
+}
+
+/*Tabel data*/
+.table-container {
+    margin: 50px auto 0;
+    width: 80%;
+    text-decoration: none; 
+}
+
+/*Taris pemisah antar data*/
+.table-container .table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-container .table thead {
+    background-color: darkred;
+}
+
+/*Header tabel*/
+.table-container .table thead tr th {
+    vertical-align: middle;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.35px;
+    color: #fff;
+    opacity: 1;
+    padding: 12px;
+    vertical-align: top;
+    border: 3px solid #232222;
+}
+
+/*Konten tabel*/
+.table-container .table tbody tr td {
+    font-size: 16px;
+    letter-spacing: 0.35px;
+    font-weight: normal;
+    color: #fff;
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+}
+
+/*Konten gambar*/
+.table-container .table tbody tr td img {
+    width: 120px;
+    border-radius: 15px;   
+}
+
+/*Tombol edit*/
+.table-container .table tbody tr td .tombol-edit {
+    background-color: #ff8e59;
+    color: #fff;
+    padding: 2px 15px;
+    border-radius: 10px;
+    -webkit-transition: .2s ease;
+    transition: .2s ease;
+    border: 2px solid transparent;
+    margin-right: 5px;
+    text-decoration: none;  
+}
+
+.table-container .tombol-edit:hover {
+    opacity: 60%;
+}
+
+.table-container .table tbody tr td form {
+    display: inline-block;
+}
+
+/*Tombol hapus*/
+.table-container .table tbody tr td .tombol-baru {
+    padding: 2px 15px;
+    border-radius: 10px;
+    -webkit-transition: .2s ease;
+    transition: .2s ease;
+    border: 2px solid transparent;
+    background-color: #ff5959;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.table-container .tombol-baru:hover {
+    opacity: 60%;
+}
+
+footer {
+    background-color: black; 
+    width: 101.1%; 
+    height: 60px; 
+    margin-left: -8px; 
+    margin-top: 40px;
+    margin-bottom: -8px;
+}
+
+/*Copy right*/
+footer h3 {
+    color: white;
+    font-size: 18px;
+    margin-top: -0px;
+    padding-top: 20px;
+    padding-left: 10px;
+    width: 99.3%;
+}
+
+/*Nama develop*/
+footer h4 i {
+    font-weight: normal;
+    color: white;
+    font-size: 18px;
+    margin-top: -45px;
+    margin-left: 78%;
+    position: absolute;
+}

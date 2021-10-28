@@ -1,0 +1,318 @@
+/*Tampilan body*/
+body{
+    font-family: calibri;
+}
+
+/*header (logo + keterangan)*/
+header {
+    width: 1374px;
+    height: 90px;
+    margin-left: -8px;
+    margin-top: -8px;
+    background-image: linear-gradient(to right, #710101, #710101, black, black);
+    position: fixed; 
+}
+
+/*Logo ASMR*/
+header img {
+    width: 140px;
+    height: auto;
+    margin-top: 13px;
+    margin-left: 9px; 
+}
+
+header h1 {
+    color: white;
+    font-size: 17px;
+    margin-left: 152px;
+    margin-top: -21px;
+}
+
+header h2 {
+    color: white;
+    font-size: 40px;
+    margin-left: 90%;
+    margin-top: -75px;
+    animation: tx 1.5s infinite alternate; 
+}
+@keyframes tx {
+    0%  {
+        opacity: 45%;
+    }
+    25%  {
+        opacity: 50%;
+    }
+    50%  {
+        opacity: 65%;
+    }
+    75%  {
+        opacity: 75%;
+    }
+    100%  {
+        opacity: 90%;
+    }
+}
+
+
+content img {
+    margin-left: -8px;
+    margin-top: 6px;
+    width: 1366px;
+    height: auto;
+    position: fixed;
+    filter: brightness(45%);
+}
+
+.login {
+    position: fixed;
+    border-radius: 10px;
+    width: 350px;
+    height: 380px;
+    background-color: rgb(164, 164, 164, 55%);
+    filter: brightness(160%);
+    margin-top: 80px;
+    margin-left: 37%;  
+}
+
+.login h2 {
+    background: -webkit-linear-gradient(45deg, red, darkred, black);-webkit-background-clip: text;-webkit-text-fill-color: transparent;
+    font-size: 35px;
+    padding-top: 5px; 
+    /*Perintah login*/
+}
+
+table {
+    margin-top: -20px;
+}
+
+.login tr {
+    font-size: 20px; 
+    /*kolom login*/
+}
+
+.login input {
+    font-size: 18px;
+    background-color: transparent;
+    border-bottom: 3px solid darkred;
+    outline: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 95%;
+    padding: 25px 40px 15px 0px;
+    margin: 6px auto;  
+    /*Kolom isi*/
+}
+
+button {
+    width: 120px;
+    height: 30px;
+    background: #232121;
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    border-radius: 8px;
+    border: none; 
+    margin-top: 30px;
+    /*Tombol login*/
+}
+
+.login button:hover{
+    background-color: rgb(51, 48, 48, 83%);
+    transform: scale(1.03);
+    cursor: pointer; 
+    /*Animasi tombol*/
+}
+
+.eye {
+    position: absolute;
+    color: black;
+    margin-left: -30px;
+    margin-top: 30px;
+    cursor: pointer;
+    /*Icon mata password*/
+}
+
+#show {
+    display: none;
+    /*password terlihat/tidak*/
+}
+
+h4 a {
+    font-size: 20px;
+    color: darkred;
+    text-decoration: none; 
+    /*Teks login/login*/
+}
+
+h4 a:hover {
+    color: orangered;
+    transform: scale(1.03);
+    opacity: .9; 
+    /*Animasi*/
+}
+
+
+footer {
+    position: absolute;
+    color: white;
+    font-size: 18px;
+    background-image: linear-gradient(to right, #710101, #710101, black, black);
+    width: 100%;
+    height: 40px;
+    margin-left: -8px;
+    margin-top: 533px;
+}
+
+footer h3 {
+    padding-left: 10px;
+    margin-top: 8px;
+}
+
+footer h4 {
+    font-weight: normal;
+    margin-top: -45px;
+    margin-left: 78%;
+}
+
+/*-------------------------------------------------------------------------------------------*/
+
+
+@media screen and (max-width: 1360px) { 
+    header {
+        width: 100%;
+    }
+
+    footer {
+        width: 100%;
+        margin-top: 524px;
+    }
+}
+
+@media screen and (max-width: 1200px) { 
+    header h2 {
+        margin-left: 88%;
+    }
+
+    .login {
+        margin-left: 35%;
+    }
+
+    footer h4 {
+        margin-left: 80%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    header h2 {
+        margin-left: 86%;
+    }
+
+    .login {
+        margin-left: 33%;
+    }
+
+    footer h4 {
+        margin-left: 77%;
+    }
+} 
+
+@media screen and (max-width: 850px) {
+    header h2 {
+        margin-left: 84%;
+    }
+
+    .login {
+        margin-left: 29%;
+    }
+
+    footer h4 {
+        margin-left: 72%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        height: 70px;
+    }
+
+    header img {
+        width: 95px;
+        height: auto;
+        margin-top: 13px;
+        margin-left: 9px; /*Logo*/
+    }
+
+    header h1 {
+        display: none;
+    }
+
+    header h2 {
+        margin-left: 79%;
+        font-size: 35px;
+        margin-top: -48px;
+    }
+
+    content img {
+        margin-top: -15px;
+        width: 980px;
+        margin-left: -200px;
+    }
+
+    .login {
+        width: 300px;
+        height: 320px;
+        margin-top: 100px;
+        margin-left: 18%;  
+    }
+
+    .login h2 {
+        font-size: 28px;
+        padding-top: 5px; 
+        /*Perintah login*/
+    }
+
+    table {
+        margin-top: -20px;
+    }
+
+    .login tr {
+        font-size: 16px; 
+        /*kolom login*/
+    }
+
+    .login input {
+        font-size: 14px;
+        width: 95%;
+        padding: 17px 10px 14px 0px;
+        /*Kolom isi*/
+    }
+
+    button {
+        width: 80px;
+        height: 25px;
+        font-size: 14px;
+        /*Tombol login*/
+    }
+
+    h4 a {
+        font-size: 15px;
+        /*Teks login/login*/
+    }
+
+    .eye {
+        margin-top: 25px;
+        /*Icon mata password*/
+    }
+
+    footer {
+        height: 40px;
+        font-size: 14px;
+    }
+
+    footer h4 {
+        margin-left: 65%;
+        margin-top: -33px;
+    }
+}
+
